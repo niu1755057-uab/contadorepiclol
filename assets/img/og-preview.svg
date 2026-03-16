@@ -1,3 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Preview Reencuentro Countdown">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1f1636" />
+      <stop offset="0.5" stop-color="#5a397f" />
+      <stop offset="1" stop-color="#ff8fab" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <text x="80" y="250" fill="#fff7ff" font-size="70" font-family="Inter, Arial, sans-serif" font-weight="800">
+    Reencuentro Countdown
+  </text>
+  <text x="80" y="330" fill="#ffe4ef" font-size="38" font-family="Inter, Arial, sans-serif">
+    Una cuenta atrás emocional para volver a ver a alguien especial
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Preview Contador Épico">
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
