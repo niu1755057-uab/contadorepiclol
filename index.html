@@ -16,6 +16,18 @@
     <meta
       property="og:description"
       content="Una cuenta atrás bonita, responsive y fácil de personalizar para un reencuentro especial."
+    <title>Contador épico en tiempo real</title>
+    <meta
+      name="description"
+      content="Cuenta regresiva moderna y personalizable para eventos, lanzamientos, bodas y promociones."
+    />
+    <meta name="theme-color" content="#0d1117" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contador épico en tiempo real" />
+    <meta
+      property="og:description"
+      content="Plantilla responsive y elegante de contador en tiempo real lista para GitHub Pages."
     />
     <meta property="og:image" content="assets/img/og-preview.svg" />
 
@@ -40,6 +52,24 @@
       <button id="theme-toggle" class="btn btn-ghost" type="button" aria-label="Cambiar tema">
         <span aria-hidden="true">🌙</span>
         <span id="theme-toggle-text">Tema</span>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="topbar wrapper">
+      <a id="brand-link" class="brand" href="#" aria-label="Ir al inicio">
+        <img id="brand-logo" src="" alt="Logo del evento" hidden />
+        <span id="brand-name">Contador en vivo</span>
+      </a>
+
+      <button id="theme-toggle" class="btn btn-ghost" type="button" aria-label="Cambiar modo oscuro">
+        <span aria-hidden="true">🌙</span>
+        <span>Tema</span>
       </button>
     </header>
 
@@ -64,6 +94,25 @@
             <p id="label-minutes" class="time-label">Minutos</p>
           </article>
           <article class="time-card">
+      <section class="hero-card" aria-labelledby="main-title">
+        <p id="event-tag" class="event-tag" hidden></p>
+        <h1 id="main-title">Cargando...</h1>
+        <p id="subtitle" class="subtitle"></p>
+
+        <div id="countdown" class="countdown" aria-live="polite" aria-atomic="true">
+          <article class="time-block">
+            <p id="days" class="time-value">00</p>
+            <p id="label-days" class="time-label">Días</p>
+          </article>
+          <article class="time-block">
+            <p id="hours" class="time-value">00</p>
+            <p id="label-hours" class="time-label">Horas</p>
+          </article>
+          <article class="time-block">
+            <p id="minutes" class="time-value">00</p>
+            <p id="label-minutes" class="time-label">Minutos</p>
+          </article>
+          <article class="time-block">
             <p id="seconds" class="time-value">00</p>
             <p id="label-seconds" class="time-label">Segundos</p>
           </article>
@@ -75,6 +124,7 @@
           <button id="share-btn" class="btn btn-primary" type="button">Compartir</button>
           <button id="calendar-btn" class="btn btn-secondary" type="button" hidden>
             Recordar esta fecha
+            Añadir al calendario
           </button>
         </div>
 
@@ -87,11 +137,17 @@
         <p id="event-location" class="event-location"></p>
         <p id="event-description" class="event-description"></p>
         <p id="event-special-message" class="event-special-message"></p>
+      <section id="event-info" class="event-info" hidden aria-labelledby="event-info-title">
+        <h2 id="event-info-title">Detalles del evento</h2>
+        <p id="event-name" class="event-name"></p>
+        <p id="event-location" class="event-location"></p>
+        <p id="event-description" class="event-description"></p>
       </section>
     </main>
 
     <footer class="wrapper footer">
       <p id="footer-note">Hecho para contar los días con ilusión ✨</p>
+      <p id="footer-note">Hecho para momentos importantes ✨</p>
     </footer>
 
     <script src="assets/js/config.js"></script>
