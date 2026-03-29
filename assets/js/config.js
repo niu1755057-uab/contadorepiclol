@@ -2,15 +2,14 @@ window.COUNTDOWN_CONFIG = {
   locale: "es-ES",
   content: {
     brandName: "A un abrazo de distancia",
-    mainTitle: "Cuenta atrás para volver a verte",
-    subtitle: "Cada segundo nos acerca un poco más.",
-    dedication: "Te pienso en cada amanecer. Qué ganas de ese reencuentro.",
-    heroTag: "Reencuentro especial",
-    footerNote: "Cuando el reloj llegue a cero, empieza nuestro momento.",
+    mainTitle: "CADA VEZ FALTA MENOOOOOOS",
+    subtitle: "1 dia mas un dia menos #dab #seronoser.",
+    dedication: "Cada vez menos para COSQUILLAS",
+    footerNote: "67?",
   },
   target: {
-    date: "2027-06-15",
-    time: "20:30:00",
+    date: "2026-04-28",
+    time: "19:00:00",
     timeZone: "Europe/Madrid",
   },
   behavior: {
@@ -39,9 +38,9 @@ window.COUNTDOWN_CONFIG = {
   eventDetails: {
     enabled: true,
     name: "Nuestro reencuentro",
-    location: "Madrid, España",
-    description: "Una tarde para hablar sin prisa, mirarnos y recuperar todo el tiempo.",
-    specialMessage: "Lo más bonito de la espera es saber que al final estás tú.",
+    location: "Barcelona, España",
+    description: "#PIENLACARA.",
+    specialMessage: "Hola te quiero #dab",
   },
   socialLinks: [
     { label: "Instagram", text: "Instagram", url: "https://instagram.com" },
