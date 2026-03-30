@@ -8,8 +8,8 @@ window.COUNTDOWN_CONFIG = {
     footerNote: "67?",
   },
   target: {
-    date: "2026-04-30",
-    time: "19:00:00",
+    date: "2026-04-7",
+    time: "12:30:00",
     timeZone: "Europe/Madrid",
   },
   behavior: {
