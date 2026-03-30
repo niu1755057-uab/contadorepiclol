@@ -9,7 +9,7 @@ window.COUNTDOWN_CONFIG = {
   },
   target: {
     date: "2026-04-7",
-    time: "12:30:00",
+    time: "12:30:01",
     timeZone: "Europe/Madrid",
   },
   behavior: {
