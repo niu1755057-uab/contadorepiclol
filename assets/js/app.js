@@ -92,9 +92,19 @@
     ).join("");
   }
 
+  function getCalendarDaysRemaining() {
+    const now = new Date();
+    const todayParts = new Intl.DateTimeFormat("en-US", {
+      timeZone: config.target.timeZone, year:"numeric", month:"2-digit", day:"2-digit"
+    }).formatToParts(now).reduce((acc, p) => { acc[p.type] = p.value; return acc; }, {});
+    const todayMs = Date.UTC(+todayParts.year, +todayParts.month - 1, +todayParts.day);
+    const [ty, tm, td] = config.target.date.split("-").map(Number);
+    return Math.max(0, Math.round((Date.UTC(ty, tm - 1, td) - todayMs) / 86400000));
+  }
+
   function setCountdownValues(ms) {
     const s = Math.floor(ms/1000);
-    el.values.days.textContent    = String(Math.floor(s/86400)).padStart(2,"0");
+    el.values.days.textContent    = String(getCalendarDaysRemaining()).padStart(2,"0");
     el.values.hours.textContent   = String(Math.floor((s%86400)/3600)).padStart(2,"0");
     el.values.minutes.textContent = String(Math.floor((s%3600)/60)).padStart(2,"0");
     el.values.seconds.textContent = String(s%60).padStart(2,"0");
